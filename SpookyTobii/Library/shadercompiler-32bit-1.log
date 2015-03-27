@@ -1,7 +1,9 @@
-Base path: C:/Program Files/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-74
+Base path: C:/Program Files/NiklasTempUnity/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-936
 Cmd: getPlatforms
-Cmd: compileSnippet
-  api=1 type=0 insize=9591 outsize=3891 kw=UNITY_COLORSPACE_GAMMA ok=1
-Cmd: compileSnippet
-  api=1 type=1 insize=9591 outsize=967 kw=UNITY_COLORSPACE_GAMMA ok=1
+Unhandled exception: Readfile from pipe failed. GLE=Denna pipe har avslutats.
+
+
+Quitting shader compiler process
+
+Crashed!
