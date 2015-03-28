@@ -1,0 +1,272 @@
+fileFormatVersion: 2
+guid: fc54da468878e9d4cae339a09bcd0373
+timeCreated: 1427558033
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: DollDress:polySurface8
+    100004: dress_joint_1
+    100006: dress_joint_2
+    100008: head_joint
+    100010: L_arm_joint
+    100012: L_collar_joint
+    100014: L_foolt_joint
+    100016: L_hand_joint
+    100018: L_hip_joint
+    100020: L_knee_joint
+    100022: L_ponytail_joint_1
+    100024: L_ponytail_joint_2
+    100026: L_ponytail_joint_3
+    100028: neck_joint
+    100030: R_arm_joint
+    100032: R_collar_joint
+    100034: R_foolt_joint
+    100036: R_hand_joint
+    100038: R_hip_joint
+    100040: R_knee_joint
+    100042: R_ponytail_joint_1
+    100044: R_ponytail_joint_2
+    100046: R_ponytail_joint_3
+    100048: spine_joint
+    400000: //RootNode
+    400002: DollDress:polySurface8
+    400004: dress_joint_1
+    400006: dress_joint_2
+    400008: head_joint
+    400010: L_arm_joint
+    400012: L_collar_joint
+    400014: L_foolt_joint
+    400016: L_hand_joint
+    400018: L_hip_joint
+    400020: L_knee_joint
+    400022: L_ponytail_joint_1
+    400024: L_ponytail_joint_2
+    400026: L_ponytail_joint_3
+    400028: neck_joint
+    400030: R_arm_joint
+    400032: R_collar_joint
+    400034: R_foolt_joint
+    400036: R_hand_joint
+    400038: R_hip_joint
+    400040: R_knee_joint
+    400042: R_ponytail_joint_1
+    400044: R_ponytail_joint_2
+    400046: R_ponytail_joint_3
+    400048: spine_joint
+    4300000: DollDress:polySurface8
+    7400000: Walk
+    7400002: Die
+    9500000: //RootNode
+    13700000: DollDress:polySurface8
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DollDress:polySurface8
+        weight: 1
+      - path: spine_joint
+        weight: 1
+      - path: spine_joint/dress_joint_1
+        weight: 1
+      - path: spine_joint/dress_joint_1/dress_joint_2
+        weight: 1
+      - path: spine_joint/L_hip_joint
+        weight: 1
+      - path: spine_joint/L_hip_joint/L_knee_joint
+        weight: 1
+      - path: spine_joint/L_hip_joint/L_knee_joint/L_foolt_joint
+        weight: 1
+      - path: spine_joint/neck_joint
+        weight: 1
+      - path: spine_joint/neck_joint/head_joint
+        weight: 1
+      - path: spine_joint/neck_joint/head_joint/L_ponytail_joint_1
+        weight: 1
+      - path: spine_joint/neck_joint/head_joint/L_ponytail_joint_1/L_ponytail_joint_2
+        weight: 1
+      - path: spine_joint/neck_joint/head_joint/L_ponytail_joint_1/L_ponytail_joint_2/L_ponytail_joint_3
+        weight: 1
+      - path: spine_joint/neck_joint/head_joint/R_ponytail_joint_1
+        weight: 1
+      - path: spine_joint/neck_joint/head_joint/R_ponytail_joint_1/R_ponytail_joint_2
+        weight: 1
+      - path: spine_joint/neck_joint/head_joint/R_ponytail_joint_1/R_ponytail_joint_2/R_ponytail_joint_3
+        weight: 1
+      - path: spine_joint/neck_joint/L_collar_joint
+        weight: 1
+      - path: spine_joint/neck_joint/L_collar_joint/L_arm_joint
+        weight: 1
+      - path: spine_joint/neck_joint/L_collar_joint/L_arm_joint/L_hand_joint
+        weight: 1
+      - path: spine_joint/neck_joint/R_collar_joint
+        weight: 1
+      - path: spine_joint/neck_joint/R_collar_joint/R_arm_joint
+        weight: 1
+      - path: spine_joint/neck_joint/R_collar_joint/R_arm_joint/R_hand_joint
+        weight: 1
+      - path: spine_joint/R_hip_joint
+        weight: 1
+      - path: spine_joint/R_hip_joint/R_knee_joint
+        weight: 1
+      - path: spine_joint/R_hip_joint/R_knee_joint/R_foolt_joint
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Die
+      takeName: Take 001
+      firstFrame: 24
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DollDress:polySurface8
+        weight: 1
+      - path: spine_joint
+        weight: 1
+      - path: spine_joint/dress_joint_1
+        weight: 1
+      - path: spine_joint/dress_joint_1/dress_joint_2
+        weight: 1
+      - path: spine_joint/L_hip_joint
+        weight: 1
+      - path: spine_joint/L_hip_joint/L_knee_joint
+        weight: 1
+      - path: spine_joint/L_hip_joint/L_knee_joint/L_foolt_joint
+        weight: 1
+      - path: spine_joint/neck_joint
+        weight: 1
+      - path: spine_joint/neck_joint/head_joint
+        weight: 1
+      - path: spine_joint/neck_joint/head_joint/L_ponytail_joint_1
+        weight: 1
+      - path: spine_joint/neck_joint/head_joint/L_ponytail_joint_1/L_ponytail_joint_2
+        weight: 1
+      - path: spine_joint/neck_joint/head_joint/L_ponytail_joint_1/L_ponytail_joint_2/L_ponytail_joint_3
+        weight: 1
+      - path: spine_joint/neck_joint/head_joint/R_ponytail_joint_1
+        weight: 1
+      - path: spine_joint/neck_joint/head_joint/R_ponytail_joint_1/R_ponytail_joint_2
+        weight: 1
+      - path: spine_joint/neck_joint/head_joint/R_ponytail_joint_1/R_ponytail_joint_2/R_ponytail_joint_3
+        weight: 1
+      - path: spine_joint/neck_joint/L_collar_joint
+        weight: 1
+      - path: spine_joint/neck_joint/L_collar_joint/L_arm_joint
+        weight: 1
+      - path: spine_joint/neck_joint/L_collar_joint/L_arm_joint/L_hand_joint
+        weight: 1
+      - path: spine_joint/neck_joint/R_collar_joint
+        weight: 1
+      - path: spine_joint/neck_joint/R_collar_joint/R_arm_joint
+        weight: 1
+      - path: spine_joint/neck_joint/R_collar_joint/R_arm_joint/R_hand_joint
+        weight: 1
+      - path: spine_joint/R_hip_joint
+        weight: 1
+      - path: spine_joint/R_hip_joint/R_knee_joint
+        weight: 1
+      - path: spine_joint/R_hip_joint/R_knee_joint/R_foolt_joint
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
