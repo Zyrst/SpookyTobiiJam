@@ -47,12 +47,66 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\CircularList.cs" />
+     <Compile Include="Assets\EyeXDemos\ActivatableGUI\Scripts\ActivatableMenuItems.cs" />
+     <Compile Include="Assets\EyeXDemos\ActivatableGUI\Scripts\GameMenu.cs" />
+     <Compile Include="Assets\EyeXDemos\ActivatableGUI\Scripts\TitleGUI.cs" />
+     <Compile Include="Assets\EyeXDemos\Calibration\Scripts\CalibrationTitleGUI.cs" />
+     <Compile Include="Assets\EyeXDemos\EyePosition\Scripts\FollowEyePosition.cs" />
+     <Compile Include="Assets\EyeXDemos\EyePosition\Scripts\FollowEyeXDisplaySize.cs" />
+     <Compile Include="Assets\EyeXDemos\EyePosition\Scripts\FollowGazePoint.cs" />
+     <Compile Include="Assets\EyeXDemos\EyeXAvailabilityIndicator.cs" />
+     <Compile Include="Assets\EyeXDemos\FighterJet\Scripts\Cockpit.cs" />
+     <Compile Include="Assets\EyeXDemos\FighterJet\Scripts\Enemy.cs" />
+     <Compile Include="Assets\EyeXDemos\FighterJet\Scripts\Explosion.cs" />
+     <Compile Include="Assets\EyeXDemos\FighterJet\Scripts\Missile.cs" />
+     <Compile Include="Assets\EyeXDemos\FighterJet\Scripts\MissileTargetIndicator.cs" />
+     <Compile Include="Assets\EyeXDemos\GazeAware3D\Scripts\GrowOnGaze.cs" />
+     <Compile Include="Assets\EyeXDemos\GazeAware3D\Scripts\Occluder.cs" />
+     <Compile Include="Assets\EyeXDemos\GoalKeeper\Scripts\Ball.cs" />
+     <Compile Include="Assets\EyeXDemos\GoalKeeper\Scripts\BallState.cs" />
+     <Compile Include="Assets\EyeXDemos\GoalKeeper\Scripts\GoalZone.cs" />
+     <Compile Include="Assets\EyeXDemos\GoalKeeper\Scripts\GoalZoneType.cs" />
+     <Compile Include="Assets\EyeXDemos\GoalKeeper\Scripts\Goalkeeper.cs" />
+     <Compile Include="Assets\EyeXDemos\Instructions.cs" />
+     <Compile Include="Assets\EyeXDemos\MapNavigation\Scripts\BirdsEyeNavigation.cs" />
+     <Compile Include="Assets\EyeXDemos\MapNavigation\Scripts\MapNavigationInstructions.cs" />
+     <Compile Include="Assets\EyeXDemos\RotateSkybox.cs" />
+     <Compile Include="Assets\EyeXDemos\SceneNavigation.cs" />
+     <Compile Include="Assets\EyeXDemos\SceneNavigationAlignment.cs" />
+     <Compile Include="Assets\EyeXDemos\Spotlight\Scripts\FollowGazePointInWorldSpace.cs" />
+     <Compile Include="Assets\EyeXDemos\TraceEyeGaze\Scripts\FixationVisualizer.cs" />
+     <Compile Include="Assets\EyeXDemos\TraceEyeGaze\Scripts\GazePointVisualizer.cs" />
+     <Compile Include="Assets\EyeXDemos\TraceEyeGaze\Scripts\PointVisualizerBase.cs" />
+     <Compile Include="Assets\EyeXDemos\UserPresence\Scripts\ChangeTextureOnPresenceChanged.cs" />
      <Compile Include="Assets\MouseLook.cs" />
      <Compile Include="Assets\Movement.cs" />
+     <Compile Include="Assets\Scripts\Classes\Dummy.cs" />
+     <Compile Include="Assets\Scripts\Classes\Item.cs" />
+     <Compile Include="Assets\Scripts\DoorUnlock.cs" />
+     <Compile Include="Assets\Scripts\EyeTracker.cs" />
+     <Compile Include="Assets\Scripts\Inventory.cs" />
+     <Compile Include="Assets\Scripts\ItemPickup.cs" />
      <Compile Include="Assets\Simpleai.cs" />
+     <Compile Include="Assets\Tmp.cs" />
+     <None Include="Assets\EyeXDemos\Skybox.shader" />
+     <None Include="Assets\Plugins\x86_64\Tobii.EyeX.Client.Net20.xml" />
+     <None Include="Assets\Plugins\x86\Tobii.EyeX.Client.Net20.xml" />
+     <None Include="Assets\Materials\Shaders\Illuminati.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
+ <Reference Include="Tobii.EyeX.Client.Net20">
+ <HintPath>Z:/home/simon/Kod/Unity/SpookyTobiiJam/SpookyTobii/Assets/Plugins/x86/Tobii.EyeX.Client.Net20.dll</HintPath>
+ </Reference>
+ <Reference Include="Tobii.EyeX.Client.Net20">
+ <HintPath>Z:/home/simon/Kod/Unity/SpookyTobiiJam/SpookyTobii/Assets/Plugins/x86_64/Tobii.EyeX.Client.Net20.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{15F6C3CB-73BF-9169-EF3E-2F20EBE8C2A6}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{793E77D1-B870-23F3-93E6-6E7C4DCA18D3}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
