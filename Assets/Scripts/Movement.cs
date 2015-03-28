@@ -7,9 +7,6 @@ public class Movement : MonoBehaviour {
 	public float jumpSpeed = 10.0f;
 	public float gravity = 20.0f;
 	private Vector3 movement = Vector3.zero;
-	private float fallStartLevel;
-	private bool falling;
-	private bool grounded = false;
 	private CharacterController controller;
 	private Camera _camera;
 
@@ -29,12 +26,7 @@ public class Movement : MonoBehaviour {
 			movement.y = 0;
 			//movement = transform.TransformDirection(movement);
 			movement *= speed;
-			if(Input.GetButton("Jump"))
-			{
-				movement.y = jumpSpeed;
-			}
 		}
-
 		movement.y -= gravity * Time.deltaTime;
 		controller.Move (movement * Time.deltaTime);
 
