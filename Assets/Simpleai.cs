@@ -19,19 +19,44 @@ public class Simpleai : MonoBehaviour {
 		foreach (Transform t in pointArray)
 			cList.Add (t);
 		//transform.position = cList.current ().position;
+		Vector3 current = cList.current().position;
+		Vector3 curDir = current - cList.previous().position;
+		curDir.Normalize();
+
 		while(true) {
-			Vector3 previous = cList.previous().position;
-			Vector3 current = cList.current().position;
+
+
 			Vector3 next = cList.next().position;
-			Vector3 nextnext = cList.nextnext().position;
+			Vector3 nextDir = next - cList.nextnext().position;
+			nextDir.Normalize();
+			nextDir = Vector3.Lerp(curDir, nextDir, 0.5f);
+			Vector3 between0;
+			Vector3 between1;
+			Math3D.ClosestPointsOnTwoLines(out between0, out between1, current, curDir, next, nextDir);
+			Vector3 between = Vector3.Lerp(between0, between1, 0.5f);
+
 			float elapsed = 0.0f;
 			while(elapsed < 1.0f) {
-				float eval = Mathf.Clamp(animeCurve.Evaluate(Mathf.Clamp(elapsed, 0, 1)),0,1);
-				transform.position = Vector3.Lerp(current, next, eval);
+
+				float eval = animeCurve.Evaluate(elapsed);
+				Vector3 first = Vector3.Lerp(current, between, elapsed);
+				Vector3 second = Vector3.Lerp(between, next, elapsed);
+				transform.position = Vector3.Lerp(first, second, elapsed);
 				elapsed += Time.deltaTime;
+
+				Debug.DrawLine(current, between, Color.green);
+				Debug.DrawLine(between, next, Color.red);
+				Debug.DrawLine(first, second, Color.yellow);
+				Debug.DrawRay(current, next - current, Color.cyan);
+				Debug.DrawRay(current, curDir, Color.magenta);
+				Debug.DrawRay(next, nextDir, Color.blue);
+				Debug.DrawLine(second, cList.nextnext().position, Color.cyan);
 				yield return null;
 			}
 			cList.inc ();
+
+			current = next;
+			curDir = nextDir;
 			yield return null;
 		}
 	}
