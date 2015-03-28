@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DoorUnlock.cs">
+    <Files>
+      <File FileName="Assets\Scripts\DoorUnlock.cs" Line="26" Column="48" />
+      <File FileName="Assets\Scripts\Classes\Item.cs" Line="7" Column="26" />
+      <File FileName="Assets\Scripts\ItemPickup.cs" Line="14" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,9 @@
+Base path: C:/Program Files/NiklasTempUnity/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-4-2368
+Cmd: getPlatforms
+Unhandled exception: Readfile from pipe failed. GLE=Denna pipe har avslutats.
+
+
+Quitting shader compiler process
+
+Crashed!
