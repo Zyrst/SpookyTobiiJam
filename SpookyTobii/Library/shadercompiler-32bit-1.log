@@ -1,5 +1,5 @@
 Base path: C:/Program Files/NiklasTempUnity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-3372
+Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-9240
 Cmd: getPlatforms
 Unhandled exception: Readfile from pipe failed. GLE=Denna pipe har avslutats.
 
