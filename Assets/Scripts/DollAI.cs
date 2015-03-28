@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 [RequireComponent(typeof(CharacterController))]
+[RequireComponent(typeof(GazeAwareComponent))]
 public class DollAI : MonoBehaviour {
 	private static bool anyIsSeen { 
 		get {
