@@ -50,8 +50,6 @@
      <None Include="Assets\EyeXDemos\Skybox.shader" />
      <None Include="Assets\Plugins\x86_64\Tobii.EyeX.Client.Net20.xml" />
      <None Include="Assets\Plugins\x86\Tobii.EyeX.Client.Net20.xml" />
-     <None Include="Assets\Materials\Shaders\TunnelVision.shader" />
-     <None Include="Assets\Materials\Shaders\Test-ShaderLab.shader" />
      <None Include="Assets\Materials\Shaders\Illuminati.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/maria/Documents/NiklasTemp/SpookyTobiiJam/SpookyTobii/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
