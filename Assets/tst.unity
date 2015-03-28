@@ -143,6 +143,8 @@ GameObject:
   - 92: {fileID: 76642735}
   - 124: {fileID: 76642734}
   - 81: {fileID: 76642733}
+  - 114: {fileID: 76642739}
+  - 114: {fileID: 76642738}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -215,6 +217,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &76642738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 76642732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63353d57c265f5648b52d434efd27783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  multiplier: .100000001
+  distanceCap: 10
+  falloffCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: .15020293
+      value: .401881754
+      inSlope: 1.93112147
+      outSlope: 1.93112147
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  smoothTime: .5
+  baseFov: 60
+  minFov: 30
+  maxFov: 179
+--- !u!114 &76642739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 76642732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea512e96fc964f48b2fc6ddeffff73a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gazePointDataMode: 2
 --- !u!1 &219328936
 GameObject:
   m_ObjectHideFlags: 0
