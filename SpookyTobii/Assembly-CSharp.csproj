@@ -77,6 +77,7 @@
      <Compile Include="Assets\EyeXDemos\TraceEyeGaze\Scripts\GazePointVisualizer.cs" />
      <Compile Include="Assets\EyeXDemos\TraceEyeGaze\Scripts\PointVisualizerBase.cs" />
      <Compile Include="Assets\EyeXDemos\UserPresence\Scripts\ChangeTextureOnPresenceChanged.cs" />
+     <Compile Include="Assets\FOVInsanity.cs" />
      <Compile Include="Assets\Movement.cs" />
      <Compile Include="Assets\Scripts\Classes\Dummy.cs" />
      <Compile Include="Assets\Scripts\Classes\Item.cs" />
