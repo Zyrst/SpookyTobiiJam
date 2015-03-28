@@ -25,6 +25,15 @@ public class CircularList {
 		return list[iterator + 2];
 	}
 
+	public Transform nextnextnext(){
+		if(iterator + 1 >= list.Count)
+			return list [2];
+		if(iterator + 2 >= list.Count)
+			return list [1];
+		if(iterator +3 >= list.Count)
+			return list	[0];
+		return list[iterator + 2];
+	}
 	public Transform current() {
 		return list[iterator];
 	}

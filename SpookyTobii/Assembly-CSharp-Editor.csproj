@@ -50,9 +50,16 @@
      <None Include="Assets\EyeXDemos\Skybox.shader" />
      <None Include="Assets\Plugins\x86_64\Tobii.EyeX.Client.Net20.xml" />
      <None Include="Assets\Plugins\x86\Tobii.EyeX.Client.Net20.xml" />
+     <None Include="Assets\Depth of Field.shader" />
      <None Include="Assets\Materials\Shaders\Illuminati.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Tobii.EyeX.Client.Net20">
+ <HintPath>Z:/home/simon/Kod/Unity/SpookyTobiiJam/SpookyTobii/Assets/Plugins/x86_64/Tobii.EyeX.Client.Net20.dll</HintPath>
+ </Reference>
+ <Reference Include="Tobii.EyeX.Client.Net20">
+ <HintPath>Z:/home/simon/Kod/Unity/SpookyTobiiJam/SpookyTobii/Assets/Plugins/x86/Tobii.EyeX.Client.Net20.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -83,12 +90,6 @@
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="Tobii.EyeX.Client.Net20">
- <HintPath>Z:/home/simon/Kod/Unity/SpookyTobiiJam/SpookyTobii/Assets/Plugins/x86/Tobii.EyeX.Client.Net20.dll</HintPath>
- </Reference>
- <Reference Include="Tobii.EyeX.Client.Net20">
- <HintPath>Z:/home/simon/Kod/Unity/SpookyTobiiJam/SpookyTobii/Assets/Plugins/x86_64/Tobii.EyeX.Client.Net20.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

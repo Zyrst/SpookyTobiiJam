@@ -7,7 +7,6 @@ public class Simpleai : MonoBehaviour {
 	public float turnSpeed = 1.5f;
 	public List<Transform> pointArray = new List<Transform> ();
 	
-	public Vector3 target = new Vector3(0,0,0);
 	public AnimationCurve animeCurve;
 	private CircularList cList = new CircularList();
 
@@ -24,10 +23,18 @@ public class Simpleai : MonoBehaviour {
 			Vector3 current = cList.current().position;
 			Vector3 next = cList.next().position;
 			Vector3 nextnext = cList.nextnext().position;
+			Vector3 nextnextnext = cList.nextnextnext().position;
 			float elapsed = 0.0f;
 			while(elapsed < 1.0f) {
-				float eval = Mathf.Clamp(animeCurve.Evaluate(Mathf.Clamp(elapsed, 0, 1)),0,1);
-				transform.position = Vector3.Lerp(current, next, eval);
+				float eval = animeCurve.Evaluate(Mathf.Clamp (elapsed,0,1));
+				Vector3 first = Vector3.Lerp(current, next, eval);
+				Vector3 second = Vector3.Lerp (next,nextnext, eval);
+				Vector3 third = Vector3.Lerp(nextnext,nextnextnext, eval);
+				Vector3 result1 = Vector3.Lerp(first,second,eval);
+				Vector3 result2 = Vector3.Lerp(second, third, eval);
+				Vector3 result = Vector3.Lerp (result1, result2, eval);
+				transform.position = first;
+				//transform.position = Vector3.Lerp(current, next, eval);
 				elapsed += Time.deltaTime;
 				yield return null;
 			}

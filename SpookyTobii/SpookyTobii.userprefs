@@ -1,29 +1,13 @@
-<<<<<<< HEAD
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CircularList.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Simpleai.cs">
     <Files>
-      <File FileName="Assets\Simpleai.cs" Line="30" Column="59" />
-      <File FileName="Assets\CircularList.cs" Line="25" Column="27" />
+      <File FileName="Assets\Scripts\Simpleai.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CircularList.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-=======
-﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DoorUnlock.cs">
-    <Files>
-      <File FileName="Assets\Scripts\DoorUnlock.cs" Line="26" Column="48" />
-      <File FileName="Assets\Scripts\Classes\Item.cs" Line="7" Column="26" />
-      <File FileName="Assets\Scripts\ItemPickup.cs" Line="14" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
->>>>>>> f3f9d47b7984f0da628691da4a0e98fbb689ac0a
 </Properties>
