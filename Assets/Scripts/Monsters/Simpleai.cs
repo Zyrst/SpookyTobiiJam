@@ -5,7 +5,7 @@ public class Simpleai : MonoBehaviour {
 
 	public float speed = 5.0f;
 	public float turnSpeed = 1.5f;
-	public List<Transform> pointArray = new List<Transform> ();
+	public Transform pointArray;
 	
 	public Vector3 target = new Vector3(0,0,0);
 	public bool debug = false;
@@ -17,8 +17,8 @@ public class Simpleai : MonoBehaviour {
 	}
 	
 	IEnumerator Move () {
-		foreach (Transform t in pointArray)
-			cList.Add (t);
+		for( int i = 0; i < pointArray.childCount; i++)
+			cList.Add (pointArray.GetChild(i));
 		//transform.position = cList.current ().position;
 
 		while(true) {
@@ -51,7 +51,7 @@ public class Simpleai : MonoBehaviour {
 				Vector3 first = Vector3.Lerp(current, between, elapsed);
 				Vector3 second = Vector3.Lerp(between, next, elapsed);
 				transform.position = Vector3.Lerp(first, second, elapsed);
-				transform.LookAt(second);
+				transform.LookAt(second + transform.forward);
 				elapsed += Time.deltaTime * speed * 0.1f /  dist;
 				if(debug) {
 					Debug.DrawLine(current, between, Color.green);
