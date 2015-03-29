@@ -98,7 +98,31 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: .254054368
+        functionName: PlayRandomFootstep
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: c8483d2163243974d834391519596b6b,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: .338624358
+        functionName: PlayOneShot
+        data: DockKnarr3
+        objectReferenceParameter: {fileID: 11500000, guid: c8483d2163243974d834391519596b6b,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: .7663818
+        functionName: PlayRandomFootstep
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: c8483d2163243974d834391519596b6b,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1

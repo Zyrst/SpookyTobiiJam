@@ -67,12 +67,42 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		Debug.Log ("Sociallys triggerd");
 		GetComponent<Movement> ().enabled = false;
+		die ();
+		StartCoroutine(bobbingDeath());
+
+	}
+
+	IEnumerator bobbingDeath() {
+		CharacterController controller = GetComponent<CharacterController> ();
+		Vector3 vel = controller.velocity;
 		float elapsed = 0.0f;
-		while(elapsed < 3.0f){
-			GetComponent<CharacterController> ().Move (new Vector3 (0, (insanityGainCurve.Evaluate(elapsed)/2), 0));
+		while(elapsed < 1.0f){
+
 			elapsed += Time.deltaTime;
+			Vector3 v = controller.velocity;
+			float vY = v.y;
+			v *= 0.75f * Time.deltaTime;
+
+			if(controller.transform.position.y > -0.3){
+				vY -= Time.deltaTime;
+			}/* else if(controller.transform.position.y <= -0.1){
+				vY += Time.deltaTime;
+			}*/
+			v.y = vY;
+			controller.Move (v);
+			yield return null;
+			/*if(controller.transform.position.y > -0.1){
+				Debug.Log ("Hello");
+					controller.Move (new Vector3(0,(-Mathf.Sin (1*animeCurve.Evaluate(v.magnitude))),0));
+				yield return null;
+			}
+			if(controller.transform.position.y <= -0.1 || controller.transform.position.y > -0.2 ){
+				//controller.Move(controll0er.transform.position * 0.5f);
+				Debug.Log("hello");
+					controller.Move (new Vector3(0,(Mathf.Sin (1*animeCurve.Evaluate(v.magnitude))),0));
+				yield return null;
+			}*/
 		}
 	}
 }
