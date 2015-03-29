@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 400b738e07509a34cab51ad52d723eb4
 folderAsset: yes
 timeCreated: 1427579087
+=======
+guid: aaf2074102fdff54ba4cdb47277bb8a3
+folderAsset: yes
+timeCreated: 1427572167
+>>>>>>> panibranch
 licenseType: Free
 DefaultImporter:
   userData: 
