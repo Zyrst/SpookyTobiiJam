@@ -95,6 +95,23 @@ GameObject:
 Transform:
   m_PrefabParentObject: {fileID: 444718, guid: 3f0e6d285e58ada47b52bda6ad3ee79d, type: 2}
   m_PrefabInternal: {fileID: 1064932287}
+--- !u!114 &91858714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 91858712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7076b5007ba15547af31b168247a87e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  maxInsanity: 10
 --- !u!114 &91858716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,10 +682,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1614356887}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f53794d4bc3826f4fbc5f0182bc8d40b, type: 3}
+  m_Script: {fileID: 11500000, guid: 443942e1ac0802445b31bce648877835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 1
   turnSpeed: 1.5
   pointArray:
   - {fileID: 1739881284}
@@ -679,22 +696,7 @@ MonoBehaviour:
   target: {x: 0, y: 0, z: 0}
   animeCurve:
     serializedVersion: 2
-    m_Curve:
-    - time: 3.04216519e-05
-      value: 2.44784169e-05
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: .793826342
-      value: .218327463
-      inSlope: .667871833
-      outSlope: .667871833
-      tangentMode: 0
-    - time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
+    m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
 --- !u!23 &1614356889
