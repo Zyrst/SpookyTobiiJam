@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e3fc69e45912a2441bfb351e9f3b80b3
 timeCreated: 1427614193
+=======
+guid: f75ccd35f1f0fd947b99c4d5d1386888
+timeCreated: 1427618876
+>>>>>>> panibranch
 licenseType: Free
 DefaultImporter:
   userData: 
