@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-
+[RequireComponent(typeof(GazeAwareComponent))]
 public class ItemPickup : MonoBehaviour {
 
 	private GazeAwareComponent c;
