@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: fc54da468878e9d4cae339a09bcd0373
-timeCreated: 1427558033
+timeCreated: 1427565272
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -152,82 +152,6 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: Die
-      takeName: Take 001
-      firstFrame: 24
-      lastFrame: 32
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: DollDress:polySurface8
-        weight: 1
-      - path: spine_joint
-        weight: 1
-      - path: spine_joint/dress_joint_1
-        weight: 1
-      - path: spine_joint/dress_joint_1/dress_joint_2
-        weight: 1
-      - path: spine_joint/L_hip_joint
-        weight: 1
-      - path: spine_joint/L_hip_joint/L_knee_joint
-        weight: 1
-      - path: spine_joint/L_hip_joint/L_knee_joint/L_foolt_joint
-        weight: 1
-      - path: spine_joint/neck_joint
-        weight: 1
-      - path: spine_joint/neck_joint/head_joint
-        weight: 1
-      - path: spine_joint/neck_joint/head_joint/L_ponytail_joint_1
-        weight: 1
-      - path: spine_joint/neck_joint/head_joint/L_ponytail_joint_1/L_ponytail_joint_2
-        weight: 1
-      - path: spine_joint/neck_joint/head_joint/L_ponytail_joint_1/L_ponytail_joint_2/L_ponytail_joint_3
-        weight: 1
-      - path: spine_joint/neck_joint/head_joint/R_ponytail_joint_1
-        weight: 1
-      - path: spine_joint/neck_joint/head_joint/R_ponytail_joint_1/R_ponytail_joint_2
-        weight: 1
-      - path: spine_joint/neck_joint/head_joint/R_ponytail_joint_1/R_ponytail_joint_2/R_ponytail_joint_3
-        weight: 1
-      - path: spine_joint/neck_joint/L_collar_joint
-        weight: 1
-      - path: spine_joint/neck_joint/L_collar_joint/L_arm_joint
-        weight: 1
-      - path: spine_joint/neck_joint/L_collar_joint/L_arm_joint/L_hand_joint
-        weight: 1
-      - path: spine_joint/neck_joint/R_collar_joint
-        weight: 1
-      - path: spine_joint/neck_joint/R_collar_joint/R_arm_joint
-        weight: 1
-      - path: spine_joint/neck_joint/R_collar_joint/R_arm_joint/R_hand_joint
-        weight: 1
-      - path: spine_joint/R_hip_joint
-        weight: 1
-      - path: spine_joint/R_hip_joint/R_knee_joint
-        weight: 1
-      - path: spine_joint/R_hip_joint/R_knee_joint/R_foolt_joint
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -254,8 +178,253 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    human: []
-    skeleton: []
+    human:
+    - boneName: spine_joint
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_hip_joint
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_hip_joint
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_knee_joint
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_knee_joint
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_foolt_joint
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_foolt_joint
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_collar_joint
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_collar_joint
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_arm_joint
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_arm_joint
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_hand_joint
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_hand_joint
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: head_joint
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: neck_joint
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Doll_Animation1baked(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: DollDress:polySurface8
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: spine_joint
+      position: {x: .0152136795, y: 1.01973164, z: .0213963855}
+      rotation: {x: 0, y: -0, z: -.0149339782, w: .99988848}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: dress_joint_1
+      position: {x: -.00393521693, y: -.302995741, z: .0904395729}
+      rotation: {x: -.0309518706, y: -.00234075449, z: -.0160844084, w: .999388754}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: dress_joint_2
+      position: {x: -.00192264304, y: -.235351294, z: .0618954599}
+      rotation: {x: 0, y: 0, z: .0499077439, w: .998753846}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_hip_joint
+      position: {x: -.0600836948, y: -.179775983, z: -.00850419048}
+      rotation: {x: -.150546491, y: .0172504187, z: -.0465648808, w: .987354994}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_knee_joint
+      position: {x: -.0513793454, y: -.349721342, z: .0186219737}
+      rotation: {x: .305321246, y: -.00159545999, z: .122816898, w: .944294691}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_foolt_joint
+      position: {x: -.0359558202, y: -.516006887, z: -.077569671}
+      rotation: {x: -.320437938, y: 0, z: -0, w: .947269499}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: neck_joint
+      position: {x: .0191998668, y: .312161088, z: -.0456254855}
+      rotation: {x: -.0659929439, y: -.00266533089, z: -.0384956859, w: .99707365}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: head_joint
+      position: {x: -.00506831519, y: .272155344, z: .0729212314}
+      rotation: {x: -.297189116, y: .00900029112, z: .0108138612, w: .954714954}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_ponytail_joint_1
+      position: {x: -.153788522, y: .178352043, z: -.0899070501}
+      rotation: {x: 0, y: -0, z: -.00968350284, w: .999953151}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_ponytail_joint_2
+      position: {x: -.102964826, y: -.0276880208, z: -.0447334722}
+      rotation: {x: 0, y: -0, z: -.037437804, w: .99929899}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_ponytail_joint_3
+      position: {x: -.0645256042, y: -.137317121, z: -.0175270829}
+      rotation: {x: 0, y: -0, z: -.0443837866, w: .999014556}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_ponytail_joint_1
+      position: {x: .153788999, y: .178352788, z: -.0899070427}
+      rotation: {x: 0, y: -0, z: -.07243976, w: .997372806}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_ponytail_joint_2
+      position: {x: .102963999, y: -.0276900008, z: -.0447334982}
+      rotation: {x: 0, y: -0, z: -.00580218434, w: .999983191}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_ponytail_joint_3
+      position: {x: .0645259991, y: -.137319997, z: -.017527299}
+      rotation: {x: 0, y: 0, z: .0387960225, w: .999247134}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_collar_joint
+      position: {x: -.146590382, y: -.0114128459, z: .0252602268}
+      rotation: {x: -.126014605, y: .240371853, z: -.0227056686, w: .962198615}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_arm_joint
+      position: {x: -.137169838, y: -.0258409251, z: 0}
+      rotation: {x: .0176309645, y: .359185368, z: .0236253105, w: .932800591}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_hand_joint
+      position: {x: -.351342618, y: -.00134413096, z: .0455423519}
+      rotation: {x: 0, y: -0, z: -.112072006, w: .993700087}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_collar_joint
+      position: {x: .146589994, y: -.0114091467, z: .0252602268}
+      rotation: {x: .113627985, y: -.290415853, z: .0577586107, w: .94837296}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_arm_joint
+      position: {x: .137170002, y: -.0258400012, z: 0}
+      rotation: {x: -.148869917, y: -.228820696, z: -.0435690805, w: .96103102}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_hand_joint
+      position: {x: .351343006, y: -.00135315594, z: .0455423519}
+      rotation: {x: -.120798253, y: -.0305311978, z: .190981448, w: .973653853}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_hip_joint
+      position: {x: .0729651526, y: -.18139407, z: -.00812817179}
+      rotation: {x: -.485079944, y: -.0376132242, z: .0688519776, w: .870943189}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_knee_joint
+      position: {x: .0384978428, y: -.348103017, z: .0182459839}
+      rotation: {x: .624195755, y: -.032315664, z: -.147378728, w: .766560435}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_foolt_joint
+      position: {x: .035955999, y: -.516007125, z: -.0775697008}
+      rotation: {x: -.177951589, y: 0, z: -0, w: .984039247}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
     armTwist: .5
     foreArmTwist: .5
     upperLegTwist: .5
@@ -265,7 +434,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 3
   additionalBone: 0
   userData: 
   assetBundleName: 

@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class TraversalList : MonoBehaviour {
+public class TraversalList {
 
 	private List<Transform> list = new List<Transform> ();
 	

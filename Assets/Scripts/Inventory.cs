@@ -2,29 +2,19 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Inventory : MonoBehaviour {
-	public static Inventory instance { get; private set; }
+public class Inventory {
 
-	private Item inv;
-
-	// Use this for initialization
-	void Awake () {
-		if (instance != null) {
-			Debug.LogError ("Multiple Inventories! There can only be one!");
-		} else {
-			instance = this;
-		}
-	}
+	private static Item inv;
 	
-	public void addItem(Item item) {
+	public static void addItem(Item item) {
 		inv |= item;
 	}
 
-	public bool hasItem(Item item) {
+	public static bool hasItem(Item item) {
 		return (inv & item) == item;
 	}
 
-	public void removeItem(Item item) {
-		item &= ~Item.KEY_DOLLHOUSE_DOOR;
+	public static void removeItem(Item item) {
+		inv &= ~item;
 	}
 }

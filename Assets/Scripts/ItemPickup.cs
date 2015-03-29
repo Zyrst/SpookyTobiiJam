@@ -18,7 +18,7 @@ public class ItemPickup : MonoBehaviour {
 
 	void FixedUpdate () {
 		if (progress > timeNeeded) {
-			Inventory.instance.addItem(type);
+			Inventory.addItem(type);
 			Destroy(gameObject);
 		}
 
