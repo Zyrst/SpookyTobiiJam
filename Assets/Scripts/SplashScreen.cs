@@ -16,6 +16,6 @@ public class SplashScreen : MonoBehaviour {
 	}
 
 	public IEnumerator fadeIn(Color color, float duration) {
-
+		yield return null;
 	}
 }

@@ -29,7 +29,7 @@ public class Player : MonoBehaviour {
 	}
 
 	public void spawn(Vector3 point) {
-		StartCoroutine (point);
+		//StartCoroutine (point);
 	}
 
 	public void spawn() {
