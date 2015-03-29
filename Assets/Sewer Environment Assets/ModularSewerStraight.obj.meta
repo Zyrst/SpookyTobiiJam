@@ -8,15 +8,20 @@ ModelImporter:
     100000: //RootNode
     100002: ModularSewerStraight:polySurface96_ModularSewerStraight:polySurface97_ModularSewerStraight:polySurface1
     100004: polySurface310
+    100006: ModularSewerStraight:polySurface96_ModularSewerStraight:polySurface97_polySurface312
     400000: //RootNode
     400002: ModularSewerStraight:polySurface96_ModularSewerStraight:polySurface97_ModularSewerStraight:polySurface1
     400004: polySurface310
+    400006: ModularSewerStraight:polySurface96_ModularSewerStraight:polySurface97_polySurface312
     2300000: ModularSewerStraight:polySurface96_ModularSewerStraight:polySurface97_ModularSewerStraight:polySurface1
     2300002: polySurface310
+    2300004: ModularSewerStraight:polySurface96_ModularSewerStraight:polySurface97_polySurface312
     3300000: ModularSewerStraight:polySurface96_ModularSewerStraight:polySurface97_ModularSewerStraight:polySurface1
     3300002: polySurface310
+    3300004: ModularSewerStraight:polySurface96_ModularSewerStraight:polySurface97_polySurface312
     4300000: ModularSewerStraight:polySurface96_ModularSewerStraight:polySurface97_ModularSewerStraight:polySurface1
     4300002: polySurface310
+    4300004: ModularSewerStraight:polySurface96_ModularSewerStraight:polySurface97_polySurface312
   materials:
     importMaterials: 1
     materialName: 0
