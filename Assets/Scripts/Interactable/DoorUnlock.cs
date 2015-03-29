@@ -19,19 +19,26 @@ public class DoorUnlock : MonoBehaviour {
 	void Awake () {
 		c = GetComponent<GazeAwareComponent> ();
 		doorLock.material.EnableKeyword ("_Color");
+		doorHinge.isKinematic = true;
+	}
+
+	protected virtual void open() {
+		doorHinge.AddForce(-transform.forward * openingForce);
 	}
 
 	void FixedUpdate () {
 		doorLock.material.SetColor("_Color", Color.white);
 		if (progress > timeNeeded) {
-			doorHinge.AddForce(-transform.forward * openingForce);
-			Inventory.instance.removeItem(requiredItem);
+			doorHinge.isKinematic = false;
+			open ();
+			Inventory.removeItem(requiredItem);
+
 			this.enabled = false;
 		}
 		
 
 		if (c.HasGaze) {
-			if (Inventory.instance.hasItem(requiredItem)) {
+			if (Inventory.hasItem(requiredItem)) {
 				progress += Time.fixedDeltaTime;
 
 			} else {
