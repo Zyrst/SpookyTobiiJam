@@ -6,6 +6,7 @@ public class Player : MonoBehaviour {
 	public bool dead { get; private set; }
 	public AnimationCurve animeCurve;
 	public Transform spawnPoint;
+	private Camera _camera;
 
 	public float fadeInTime = 2.0f;
 
@@ -17,6 +18,7 @@ public class Player : MonoBehaviour {
 
 	void Awake () {
 		instance = this;
+		_camera = GetComponentInChildren<Camera> ();
 	}
 	
 	// Update is called once per frame
@@ -61,6 +63,12 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		Debug.Log ("Social triggerd");
+		Debug.Log ("Sociallys triggerd");
+		GetComponent<Movement> ().enabled = false;
+		float elapsed = 0.0f;
+		while(elapsed < 3.0f){
+			GetComponent<CharacterController> ().Move (Vector3 (0, (animeCurve.Evaluate(elapsed)/2), 0));
+			elapsed += Time.deltaTime;
+		}
 	}
 }

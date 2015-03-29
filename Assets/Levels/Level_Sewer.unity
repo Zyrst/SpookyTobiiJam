@@ -1012,6 +1012,38 @@ Prefab:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11432168, guid: 84c0e6830da0b9640b8dc74bff23b915, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11432168, guid: 84c0e6830da0b9640b8dc74bff23b915, type: 2}
+      propertyPath: focalPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11432168, guid: 84c0e6830da0b9640b8dc74bff23b915, type: 2}
+      propertyPath: objectFocus
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11432168, guid: 84c0e6830da0b9640b8dc74bff23b915, type: 2}
+      propertyPath: focalSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11432168, guid: 84c0e6830da0b9640b8dc74bff23b915, type: 2}
+      propertyPath: dofBlurShader
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11432168, guid: 84c0e6830da0b9640b8dc74bff23b915, type: 2}
+      propertyPath: dofShader
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11432168, guid: 84c0e6830da0b9640b8dc74bff23b915, type: 2}
+      propertyPath: bokehShader
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11432168, guid: 84c0e6830da0b9640b8dc74bff23b915, type: 2}
+      propertyPath: bokehTexture
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 84c0e6830da0b9640b8dc74bff23b915, type: 2}
   m_IsPrefabParent: 0
@@ -1023,6 +1055,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 550205642}
+  - 65: {fileID: 550205643}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1037,11 +1070,23 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 550205641}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.0769999996, z: 0}
-  m_LocalScale: {x: 30, y: 0, z: 30}
+  m_LocalPosition: {x: 0, y: 0, z: 4.98999977}
+  m_LocalScale: {x: 20, y: 0, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
+--- !u!65 &550205643
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 550205641}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &566661810
 Prefab:
   m_ObjectHideFlags: 0
