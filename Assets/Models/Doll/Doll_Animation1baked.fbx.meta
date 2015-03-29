@@ -99,7 +99,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .26608187
+      - time: .254054368
         functionName: PlayRandomFootstep
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: c8483d2163243974d834391519596b6b,
@@ -107,16 +107,16 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .317251444
-        functionName: PlaySound
-        data: 
+      - time: .338624358
+        functionName: PlayOneShot
+        data: DockKnarr3
         objectReferenceParameter: {fileID: 11500000, guid: c8483d2163243974d834391519596b6b,
           type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .311403513
-        functionName: NewEvent
+      - time: .7663818
+        functionName: PlayRandomFootstep
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: c8483d2163243974d834391519596b6b,
           type: 3}
