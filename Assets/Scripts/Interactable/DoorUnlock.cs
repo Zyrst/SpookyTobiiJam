@@ -24,6 +24,7 @@ public class DoorUnlock : MonoBehaviour {
 
 	protected virtual void open() {
 		doorHinge.AddForce(-transform.forward * openingForce);
+		Debug.Log ("OPENED!");
 	}
 
 	void FixedUpdate () {

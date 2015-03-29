@@ -2,9 +2,9 @@
 using System.Collections;
 
 public class Player : MonoBehaviour {
-	public float instanity { get { return animeCurve.Evaluate(_insanity/maxInsanity); } } 
+	public float instanity { get { return insanityGainCurve.Evaluate(_insanity/maxInsanity); } } 
 	public bool dead { get; private set; }
-	public AnimationCurve animeCurve;
+	public AnimationCurve insanityGainCurve;
 	public Transform spawnPoint;
 	private Camera _camera;
 
@@ -16,14 +16,19 @@ public class Player : MonoBehaviour {
 	public int maxInsanity = 10;
 	private int _insanity;
 
+	private bool firstTick = true;
+
 	void Awake () {
 		instance = this;
 		_camera = GetComponentInChildren<Camera> ();
 	}
 	
 	// Update is called once per frame
-	void Update(){
-
+	void Update () {
+		if (firstTick) {
+			firstTick = false;
+			spawn ();
+		}
 	}
 
 	public void die() {
@@ -31,7 +36,7 @@ public class Player : MonoBehaviour {
 	}
 
 	public void spawn(Vector3 point) {
-		//StartCoroutine (point);
+		StartCoroutine (spawnTransition(point));
 	}
 
 	public void spawn() {
@@ -39,10 +44,9 @@ public class Player : MonoBehaviour {
 	}
 
 	private IEnumerator spawnTransition(Vector3 point) {
-		float elapsed = 0.0f;
-		while (elapsed < 1.0f) {
-			yield return null;
-		}
+		transform.position = point;
+		Debug.Log (SplashScreen.instance);
+		yield return StartCoroutine (SplashScreen.instance.fadeIn (Color.black, fadeInTime));
 	}
 
 	public void setInsanity(int ins){
@@ -74,7 +78,7 @@ public class Player : MonoBehaviour {
 		Vector3 vel = controller.velocity;
 		float elapsed = 0.0f;
 		while(elapsed < 1.0f){
-			
+
 			elapsed += Time.deltaTime;
 			Vector3 v = controller.velocity;
 			float vY = v.y;
