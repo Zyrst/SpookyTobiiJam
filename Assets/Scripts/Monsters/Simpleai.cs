@@ -51,6 +51,7 @@ public class Simpleai : MonoBehaviour {
 				Vector3 first = Vector3.Lerp(current, between, elapsed);
 				Vector3 second = Vector3.Lerp(between, next, elapsed);
 				transform.position = Vector3.Lerp(first, second, elapsed);
+				transform.LookAt(second);
 				elapsed += Time.deltaTime * speed * 0.1f /  dist;
 				if(debug) {
 					Debug.DrawLine(current, between, Color.green);
