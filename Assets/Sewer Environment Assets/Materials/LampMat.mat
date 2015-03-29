@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: LampMat
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _METALLICGLOSSMAP
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -18,7 +18,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: f1b4f53533c9afa4080a1f3bc923ce5a, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -74,7 +74,7 @@ Material:
         first:
           name: _MetallicGlossMap
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: f1b4f53533c9afa4080a1f3bc923ce5a, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -97,11 +97,11 @@ Material:
       data:
         first:
           name: _Glossiness
-        second: .5
+        second: .244000003
       data:
         first:
           name: _Metallic
-        second: 0
+        second: 1
       data:
         first:
           name: _ZWrite
@@ -138,7 +138,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .167038515, g: .170222804, b: .210344806, a: 1}
+        second: {r: .320360065, g: .330526263, b: .458620697, a: 1}
       data:
         first:
           name: _EmissionColorUI
