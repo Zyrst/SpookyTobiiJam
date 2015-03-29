@@ -20,8 +20,8 @@ public class Player : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void Update(){
+
 	}
 
 	public void die() {
@@ -39,7 +39,6 @@ public class Player : MonoBehaviour {
 	private IEnumerator spawnTransition(Vector3 point) {
 		float elapsed = 0.0f;
 		while (elapsed < 1.0f) {
-
 			yield return null;
 		}
 	}
@@ -59,5 +58,9 @@ public class Player : MonoBehaviour {
 		_insanity--;
 		if (_insanity < 0)
 			_insanity = 0;
+	}
+
+	void OnTriggerEnter(Collider other){
+		Debug.Log ("Social triggerd");
 	}
 }
