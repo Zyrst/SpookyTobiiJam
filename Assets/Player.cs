@@ -67,9 +67,17 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		GetComponent<Movement> ().enabled = false;
-		die ();
-		StartCoroutine(bobbingDeath());
+		if (other.GetComponentInChildren<MrChaser> () == true) {
+			GetComponent<Movement> ().enabled = false;
+			die ();
+
+		}
+		if (other.name == "WaterTrigger") {
+			GetComponent<Movement> ().enabled = false;
+			die ();
+			StartCoroutine(bobbingDeath());
+		}
+
 
 	}
 
