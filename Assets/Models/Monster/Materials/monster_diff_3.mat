@@ -7,8 +7,13 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: monster_diff_3
+<<<<<<< HEAD
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+=======
   m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _NORMALMAP _SPECGLOSSMAP
+>>>>>>> s
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -18,14 +23,22 @@ Material:
         first:
           name: _MainTex
         second:
+<<<<<<< HEAD
+          m_Texture: {fileID: 0}
+=======
           m_Texture: {fileID: 2800000, guid: df0442b4b4b1ccb4f8b13ce418eb119f, type: 3}
+>>>>>>> s
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
         second:
+<<<<<<< HEAD
+          m_Texture: {fileID: 0}
+=======
           m_Texture: {fileID: 2800000, guid: cc3d1cf53c6ec9f46907792e40479182, type: 3}
+>>>>>>> s
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -77,6 +90,8 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+<<<<<<< HEAD
+=======
       data:
         first:
           name: _SpecGlossMap
@@ -84,6 +99,7 @@ Material:
           m_Texture: {fileID: 2800000, guid: c354855ca20a2a8479e6be2f2132274c, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+>>>>>>> s
     m_Floats:
       data:
         first:
@@ -141,16 +157,23 @@ Material:
       data:
         first:
           name: _EmissionColor
+<<<<<<< HEAD
+        second: {r: 0, g: 0, b: 0, a: 1}
+=======
         second: {r: 0, g: 0, b: 0, a: 0}
+>>>>>>> s
       data:
         first:
           name: _Color
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
+<<<<<<< HEAD
+=======
           name: _SpecColor
         second: {r: .200000003, g: .200000003, b: .200000003, a: 1}
       data:
         first:
+>>>>>>> s
           name: _EmissionColorUI
         second: {r: 1, g: 1, b: 1, a: 1}

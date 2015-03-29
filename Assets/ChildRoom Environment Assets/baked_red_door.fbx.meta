@@ -1,0 +1,132 @@
+fileFormatVersion: 2
+guid: 5fc059c637c09ce49bf75b9c4b6def84
+timeCreated: 1427635257
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: actual_lock
+    100002: //RootNode
+    100004: door
+    100006: doorknob
+    100008: doorknob_plate_thingy
+    100010: lock_bar
+    100012: lock_drag_thing
+    100014: lock_drag_thing_handle_thingy
+    100016: lock_gear
+    100018: lock_segment_1
+    100020: lock_segment_2
+    100022: lock_segment_3
+    100024: lock_segment_4
+    400000: actual_lock
+    400002: //RootNode
+    400004: door
+    400006: doorknob
+    400008: doorknob_plate_thingy
+    400010: lock_bar
+    400012: lock_drag_thing
+    400014: lock_drag_thing_handle_thingy
+    400016: lock_gear
+    400018: lock_segment_1
+    400020: lock_segment_2
+    400022: lock_segment_3
+    400024: lock_segment_4
+    2300000: actual_lock
+    2300002: //RootNode
+    2300004: door
+    2300006: doorknob
+    2300008: doorknob_plate_thingy
+    2300010: lock_bar
+    2300012: lock_drag_thing
+    2300014: lock_drag_thing_handle_thingy
+    2300016: lock_gear
+    2300018: lock_segment_1
+    2300020: lock_segment_2
+    2300022: lock_segment_3
+    2300024: lock_segment_4
+    3300000: actual_lock
+    3300002: //RootNode
+    3300004: door
+    3300006: doorknob
+    3300008: doorknob_plate_thingy
+    3300010: lock_bar
+    3300012: lock_drag_thing
+    3300014: lock_drag_thing_handle_thingy
+    3300016: lock_gear
+    3300018: lock_segment_1
+    3300020: lock_segment_2
+    3300022: lock_segment_3
+    3300024: lock_segment_4
+    4300000: door_frame
+    4300002: lock_bar
+    4300004: door
+    4300006: doorknob_plate_thingy
+    4300008: doorknob
+    4300010: lock_drag_thing
+    4300012: lock_drag_thing_handle_thingy
+    4300014: actual_lock
+    4300016: lock_gear
+    4300018: lock_segment_1
+    4300020: lock_segment_2
+    4300022: lock_segment_3
+    4300024: lock_segment_4
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 10
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
