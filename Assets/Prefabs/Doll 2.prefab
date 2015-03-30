@@ -777,7 +777,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.88759041, y: .462520003, z: -2.29733992}
+  m_LocalPosition: {x: -28.7000008, y: .899999976, z: 18.7000008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 412374}
@@ -924,7 +924,7 @@ Animator:
   m_GameObject: {fileID: 135210}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ccb997497ead0274b91836ff35298f32, type: 3}
-  m_Controller: {fileID: 9100000, guid: ce999c2c9f102854c9f9bf0610735ea1, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7b61ae9b52b4daf489da5a50fc1ae59f, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -984,7 +984,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 8c42d82158e0bd142882f28f9b08cdde, type: 2}
+  - {fileID: 2100000, guid: c88652e85b642874cb08ce5a5c228ea2, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
