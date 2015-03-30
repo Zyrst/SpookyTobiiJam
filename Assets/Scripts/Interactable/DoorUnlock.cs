@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(GazeAware2))]
 public class DoorUnlock : MonoBehaviour {
 
-	private GazeAwareComponent c;
+	private GazeAware2 c;
 
 	private float progress = 0.0f;
 	public float timeNeeded;
@@ -17,7 +18,7 @@ public class DoorUnlock : MonoBehaviour {
 	public float openingForce = 1.0f;
 
 	void Awake () {
-		c = GetComponent<GazeAwareComponent> ();
+		c = GetComponent<GazeAware2> ();
 		doorLock.material.EnableKeyword ("_Color");
 		doorHinge.isKinematic = true;
 	}

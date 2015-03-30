@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-[RequireComponent(typeof(GazePointDataComponent))]
+[RequireComponent(typeof(GazePointDataComponent2))]
 [RequireComponent(typeof(Camera))]
 public class FOVInsanity : MonoBehaviour {
 	[Range(0.1f, 10.0f)]
@@ -17,22 +17,22 @@ public class FOVInsanity : MonoBehaviour {
 	public float maxFov = 179.0f;
 
 
-	private GazePointDataComponent c;
+	private GazePointDataComponent2 c;
 	private Camera cam;
 	private float avgDist = 1.0f;
 	private float curVel;
 	// Use this for initialization
 	void Awake () {
-		c = GetComponent<GazePointDataComponent> ();
+		c = GetComponent<GazePointDataComponent2> ();
 		cam = GetComponent<Camera> ();
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		EyeXGazePoint gp = c.LastGazePoint;
+		GazePointDataComponent2.EyeXGazePoint2 gp = c.LastGazePoint;
 		if (gp.IsValid && gp.IsWithinScreenBounds) {
 			RaycastHit hit; //gp.Screen
-			if (Physics.Raycast (cam.ScreenPointToRay (gp.Screen), out hit)) {
+			if (Physics.Raycast (cam.ScreenPointToRay (gp.screen), out hit)) {
 				Debug.DrawRay(transform.position, hit.point, Color.red);
 				avgDist = Mathf.Lerp(avgDist, Mathf.MoveTowards(avgDist, hit.distance, 5.0f), 0.05f);
 				
