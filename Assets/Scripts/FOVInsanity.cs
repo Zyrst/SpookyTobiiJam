@@ -39,7 +39,7 @@ public class FOVInsanity : MonoBehaviour {
 				cam.fieldOfView = Mathf.SmoothDamp (
 					cam.fieldOfView,
 					Mathf.Lerp (minFov, maxFov, falloffCurve.Evaluate (Mathf.Clamp (avgDist * multiplier, 0.1f, distanceCap) / distanceCap)),
-					ref curVel, 0.5f);
+					ref curVel, smoothTime);
 
 			} else {
 				cam.fieldOfView = Mathf.SmoothDamp (
