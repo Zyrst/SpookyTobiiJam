@@ -52,6 +52,8 @@ public class MrChaser : MonoBehaviour {
 				Vector3 first = Vector3.Lerp(current, between, elapsed);
 				Vector3 second = Vector3.Lerp(between, next, elapsed);
 				transform.position = Vector3.Lerp(first, second, elapsed);
+				//Makes MrChaser look at forward and not position which he was put in the world
+				transform.LookAt(second + transform.forward);
 				elapsed += Time.deltaTime * speed * 0.1f /  dist;
 				if(debug) {
 					Debug.DrawLine(current, between, Color.green);
@@ -80,6 +82,13 @@ public class MrChaser : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		
+
+	}
+
+	void OnTriggerEnter(Collider other){
+		if (other.GetComponent<Player> () != null) {
+			Debug.Log ("dead player");
+			other.GetComponentInChildren<Player> ().die ();
+		}
 	}
 }
