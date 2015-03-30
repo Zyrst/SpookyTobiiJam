@@ -52,6 +52,7 @@ public class MrChaser : MonoBehaviour {
 				Vector3 first = Vector3.Lerp(current, between, elapsed);
 				Vector3 second = Vector3.Lerp(between, next, elapsed);
 				transform.position = Vector3.Lerp(first, second, elapsed);
+				//Makes MrChaser look at forward and not position which he was put in the world
 				transform.LookAt(second + transform.forward);
 				elapsed += Time.deltaTime * speed * 0.1f /  dist;
 				if(debug) {
