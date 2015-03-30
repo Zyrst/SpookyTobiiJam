@@ -23,10 +23,12 @@ public class AlternativeLookTarget : MonoBehaviour {
 	void Update () {
 		if (!eyeTrackerAvailable) {
 			RaycastHit hit;
-			if(Physics.Raycast(cam.ViewportPointToRay( new Vector3(0.5f, 0.0f, 0.5f)), out hit)) {
+			if(Physics.Raycast(cam.ViewportPointToRay( new Vector3(0.5f, 0.0f, 0.5f)), out hit, LayerMask.NameToLayer("Interactable"))) {
 				GazeAware2 t;
+				Debug.Log(hit.transform.name);
 				if( (t = hit.transform.GetComponent<GazeAware2>()) != null) {
 					curTarget = t;
+					Debug.Log(t);
 				}
 			}
 			

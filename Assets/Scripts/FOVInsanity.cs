@@ -3,9 +3,9 @@ using System.Collections;
 [RequireComponent(typeof(GazePointDataComponent2))]
 [RequireComponent(typeof(Camera))]
 public class FOVInsanity : MonoBehaviour {
-	[Range(0.1f, 10.0f)]
-	public float multiplier = 0.1f;
-	[Range(0.1f, 1.0f)]
+	[Range(0.01f, 10.0f)]
+	public float multiplier = 0.01f;
+	[Range(0.1f, 100.0f)]
 	public float distanceCap = 10.0f;
 	public AnimationCurve falloffCurve;
 	public float smoothTime = 0.5f;
@@ -14,7 +14,7 @@ public class FOVInsanity : MonoBehaviour {
 	[Range(10.0f, 60.0f)]
 	public float minFov = 30.0f;
 	[Range(60.0f, 170.0f)]
-	public float maxFov = 179.0f;
+	public float maxFov = 170.0f;
 
 
 	private GazePointDataComponent2 c;

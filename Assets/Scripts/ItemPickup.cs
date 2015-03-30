@@ -1,16 +1,16 @@
 using UnityEngine;
 using System.Collections;
-[RequireComponent(typeof(GazeAwareComponent))]
+[RequireComponent(typeof(GazeAware2))]
 public class ItemPickup : MonoBehaviour {
 
-	private GazeAwareComponent c;
+	private GazeAware2 c;
 	public Item type;
 
 	private float progress = 0.0f;
 	public float timeNeeded = 0.2f;
 
 	void Awake () {
-		c = GetComponent<GazeAwareComponent> ();
+		c = GetComponent<GazeAware2> ();
 		if (type == Item.EVERYTHING || type == Item.ANYTHING_NOTHING) {
 			Debug.LogWarning("You have an item of type EVERYTHING or ANYTHING. Are you insane?");
 		}
