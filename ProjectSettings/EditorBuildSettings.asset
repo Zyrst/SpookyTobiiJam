@@ -4,30 +4,4 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 0
-    path: Assets/EyeXDemos/GazeAware3D/GazeAware3DScene.unity
-  - enabled: 0
-    path: Assets/EyeXDemos/ActivatableGUI/ActivatableGUIScene.unity
-  - enabled: 0
-    path: Assets/EyeXDemos/TraceEyeGaze/TraceEyeGazeScene.unity
-  - enabled: 0
-    path: Assets/EyeXDemos/MapNavigation/MapNavigationScene.unity
-  - enabled: 0
-    path: Assets/EyeXDemos/EyePosition/EyePositionScene.unity
-  - enabled: 0
-    path: Assets/EyeXDemos/UserPresence/UserPresenceScene.unity
-  - enabled: 0
-    path: Assets/EyeXDemos/GoalKeeper/GoalKeeper.unity
-  - enabled: 0
-    path: Assets/EyeXDemos/FighterJet/FighterJet.unity
-  - enabled: 0
-    path: Assets/EyeXDemos/Spotlight/SpotlightScene.unity
-  - enabled: 0
-    path: Assets/EyeXDemos/Calibration/Calibration.unity
-  - enabled: 1
-<<<<<<< HEAD
-    path: Assets/DollShowLevel.unity
-=======
-    path: Assets/Levels/Level_Sewer.unity
->>>>>>> nl
+  m_Scenes: []
